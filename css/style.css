@@ -1,0 +1,181 @@
+html
+{
+	margin: 0px;
+	padding: 0px;
+	background-image:url('../images/bg.png');
+}
+
+header
+{
+	font-family: 'The Girl Next Door', cursive;
+	text-align: center;
+	font-size: 55px;
+	
+	margin-top: -10px;
+	margin-bottom: -10px;
+}
+
+#info
+{
+	font-family: 'The Girl Next Door', cursive;
+	font-size: 13px;
+	width: 200px;
+	font-weight: bold;
+	position: fixed;
+	top: 5px;
+	left: 5px;
+	overflow: hidden;
+	height: 25px;
+	
+	transition-property: height;
+	-moz-transition-property: height; /* Firefox 4 */
+	-webkit-transition-property: height; /* Safari and Chrome */
+	-o-transition-property: height; /* Opera */
+  	
+  	transition-duration: 1s;
+  	-moz-transition-duration: 1s;
+  	-webkit-transition-duration: 1s;
+  	-o-transition-duration: 1s;
+}
+
+#info:hover
+{
+	background-color: #F5F5F5;
+	opacity: 0.95;
+	height: 530px;
+}
+
+#sharing
+{
+	margin-top: 5px;
+	padding: 5px;
+	border-top: 1px solid #333;
+}
+
+.label
+{
+	font-family: 'The Girl Next Door', cursive;
+	text-align: center;
+	font-weight: bold;
+}
+
+#app
+{
+	margin-left: auto;
+	margin-right: auto;
+	top: 10%;
+	width: 1300px;
+	
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+#colours
+{
+	height: 580px;
+	width: 145px;
+	float: left;
+}
+
+#colours .colour
+{
+	width: 35px;
+	height: 20px;
+	
+	margin-right: 10px;
+	margin-bottom: 9px;
+	margin-top: 3px;
+	margin-left: 8px;
+	
+	border-radius: 10px;
+	padding-top: 4px; 
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	float: right;
+	border: 1px solid #555555;
+}
+
+#colours .colour:hover
+{
+	opacity: 0.7;
+}
+
+.action-button
+{
+	width: 35px;
+	height: 20px;
+	margin: 10px;
+	padding-top: 4px; 
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	background: #000000;
+	color: #FFFFFF;
+	float: right;
+	border-radius: 10px;
+	font-family: 'The Girl Next Door', cursive;
+	text-align: center;
+	font-weight: bold;
+}
+
+.action-button:hover
+{
+	opacity: 0.8;
+}
+
+canvas
+{
+	display: block;
+	border: 2px solid #333;
+	float: left;
+	cursor: crosshair;
+	background: #FFFFFF;
+	
+	width: 960px;
+	height: 580px;
+	
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+#controls
+{
+	height: 580px;
+	width: 145px;
+	float: left;
+}
+
+#length
+{
+	height: 580px;
+	float: left;
+	margin-left: 10px;
+}
+
+#thickness
+{
+	height: 580px;
+	float: left;
+	margin-left: 10px;
+}
+
+#length-controller
+{
+	margin-left: 20px;
+	height: 520px;
+	width: 5px;
+}
+
+#thickness-controller
+{
+	margin-left: 30px;
+	height: 520px;
+	width: 5px;
+}

@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+	<head>
+		<title> Beautiful Curves </title>
+		
+		<!-- Styles -->
+		<link href='css/style.css' media='screen' rel='stylesheet' type='text/css'/>
+		<link href='css/jquery-ui/jquery.ui.all.css' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=The+Girl+Next+Door' rel='stylesheet' type='text/css'>
+				
+		<!-- Scripts -->
+		<script type="text/javascript" src="js/curves.js"></script>
+		<script type="text/javascript" src="js/matrix.js"></script>
+		<script type="text/javascript" src="/js/analytics.js"></script>
+		
+		<!-- Scripts - UI -->
+		<script type="text/javascript" src="js/jquery/jquery-1.6.2.js"></script>
+		<script type="text/javascript" src="js/jquery-ui/jquery.ui.core.js"></script>
+		<script type="text/javascript" src="js/jquery-ui/jquery.ui.widget.js"></script>
+		<script type="text/javascript" src="js/jquery-ui/jquery.ui.mouse.js"></script>
+		<script type="text/javascript" src="js/jquery-ui/jquery.ui.slider.js"></script>
+
+		
+		<!-- Start App -->
+		<script>
+			var app;
+			window.onload = function() {
+				app = new Curves();
+				app.initialize();
+			}
+		</script>
+		
+	</head>
+	<body>
+		
+		<!--FB Sharing-->
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) {return;}
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+		
+		<!-- G+ -->
+		<script type="text/javascript">
+		  (function() {
+		    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+		    po.src = 'https://apis.google.com/js/plusone.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+		  })();
+		</script>
+		
+		
+		<header>{ Beautiful Curves }</header>
+		<div id="info">
+			{ Info + Sharing }
+			<br><!-- whats wrong-->
+			Beautiful curves simulates that little bit of randomness in life, where you never know whats going to happen next.
+			<br><br> <!--brrrr, its cold in here-->
+			Inspired by all those <a href="http://hakim.se/experiments/html5/sketch/">other</a> <a href="http://mrdoob.com/projects/harmony/">great</a>
+			html5 drawing apps out there, and this little <a href="http://tholman.com/series/flash-forward/ports/draw-worm/01/">demo</a> - ported from flash when 
+			exams met procrastination.
+			<br><br><!--really cold-->
+			
+			<div id="sharing">
+				Like this? Share the love:
+				<br><br>
+				<div style="margin-bottom: 6px;" class="fb-like" data-href="http://tholman.com/experiments/html5/beautiful-curves/" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true"></div>
+				<a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="twholman">Tweet</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+				<g:plusone annotation="inline"></g:plusone>
+			</div>
+			<br>
+			By <a href="http://tholman.com/">Tim Holman</a> - <a href="http://twitter.com/twholman">@twholman</a>
+			
+		</div>
+		<div id="app">
+			<div id="colours"></div>
+			<canvas id="canvas">Sorry man, seems like your browser doesn't support awesomeness :()</canvas>
+			<div id="controls">
+				<div id="length"></div>
+				<div id="thickness"></div>
+			</div>
+		</div>
+	</body>
+</html>
