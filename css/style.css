@@ -127,6 +127,28 @@ header
 	opacity: 0.8;
 }
 
+@media screen and (min-width: 0px) {
+canvas
+{
+	display: block;
+	border: 2px solid #333;
+	float: left;
+	cursor: crosshair;
+	background: #FFFFFF;
+	
+	width: 480px;
+	height: 290px;
+	
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+}
+
+@media screen and (min-width: 1000px) {
 canvas
 {
 	display: block;
@@ -144,6 +166,9 @@ canvas
 	-o-user-select: none;
 	user-select: none;
 }
+
+}
+
 
 #controls
 {
