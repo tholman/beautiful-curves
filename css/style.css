@@ -127,24 +127,6 @@ header
 	opacity: 0.8;
 }
 
-canvas
-{
-	display: block;
-	border: 2px solid #333;
-	float: left;
-	cursor: crosshair;
-	background: #FFFFFF;
-	
-	width: 960px;
-	height: 580px;
-	
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-o-user-select: none;
-	user-select: none;
-}
-
 #controls
 {
 	height: 580px;
