@@ -9,7 +9,7 @@ header
 {
 	font-family: 'Open Sans', sans-serif;
 	text-align: center;
-	font-size: 55px;
+	font-size: 25px;
 	
 	margin-top: -10px;
 	margin-bottom: 0px;
@@ -18,7 +18,7 @@ header
 #info
 {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 14px;
+	font-size: 4px;
 	width: 200px;
 	font-weight: bold;
 	position: fixed;
@@ -26,7 +26,7 @@ header
 	left: 5px;
 	overflow: hidden;
 	height: 20px;
-	opacity: 100;
+	opacity: 0;
 	
 	transition-property: height;
 	-moz-transition-property: height; /* Firefox 4 */
@@ -58,7 +58,7 @@ header
 	font-family: 'Open Sans', sans-serif;
 	text-align: center;
 	font-weight: bold;
-	font-size: 14px;
+	font-size: 10px;
 	color: rgb(66, 184, 221);
 }
 
@@ -67,7 +67,7 @@ header
 	margin-left: auto;
 	margin-right: auto;
 	top: 10%;
-	width: 1300px;
+	width: 100%;
 	
 	-webkit-user-select: none;
 	-khtml-user-select: none;
@@ -79,17 +79,17 @@ header
 #colours
 {
 	height: 580px;
-	width: 145px;
+	width: 72px;
 	float: left;
 }
 
 #colours .colour
 {
-	width: 40px;
-	height: 40px;
+	width: 20px;
+	height: 20px;
 	
-	margin-right: 10px;
-	margin-bottom: 9px;
+	margin-right: 5px;
+	margin-bottom: 4px;
 	margin-top: 3px;
 	margin-left: 0px;
 	
@@ -105,11 +105,11 @@ header
 
 .action-button
 {
-	width: 88px;
+	width: 44px;
 	height: 20px;
-	margin-right: 10px;
-	margin-bottom: 9px;
-	padding: 5px;
+	margin-right: 5px;
+	margin-bottom: 4px;
+	padding: 4px;
 	background: rgb(66, 184, 221);
 	color: #FFFFFF;
 	float: right;
@@ -125,9 +125,6 @@ header
 	opacity: 0.8;
 }
 
-br {
-   line-height: 0px;
-}
 
 canvas
 {
@@ -137,7 +134,7 @@ canvas
 	cursor: crosshair;
 	background: #FFFFFF;
 	
-	width: 960px;
+	width: 60%;
 	height: 580px;
 	
 	-webkit-user-select: none;
@@ -147,40 +144,42 @@ canvas
 	user-select: none;
 }
 
+br {
+   line-height:150px;
+}
+
 #controls
 {
-	height: 580px;
-	width: 145px;
-	float: left;c
+	height: 100%;
+	width: 15px;
+	float: left;
 }
 
 #length
 {
-	height: 580px;
+	height: 50px;
 	float: left;
 	margin-left: 10px;
 }
 
 #thickness
 {
-	height: 580px;
+	height: 50px;
+	margin-top: 150px;
 	float: left;
 	margin-left: 10px;
-	margin-top: 0px;
 }
 
 #length-controller
 {
-	margin-left: 25px;
-	height: 520px;
+	margin-left: 15px;
+	height: 50px;
 	width: 5px;
-	margin-top: 0px;
 }
 
 #thickness-controller
 {
-	margin-top: 0px;
-	margin-left: 25px;
-	height: 520px;
+	margin-left: 15px;
+	height: 50px;
 	width: 5px;
 }
