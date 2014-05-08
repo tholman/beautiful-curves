@@ -4,9 +4,10 @@
 		<title> Beautiful Curves </title>
 		
 		<!-- Styles -->
-		<link href='css/style.css' media='screen' rel='stylesheet' type='text/css'/>
+		<link href='css/small-style.css' media='screen and (min-width: 0px)' rel='stylesheet' type='text/css'/>
+		<link href='css/style.css' media='screen and (min-width: 1000px)' rel='stylesheet' type='text/css'/>
 		<link href='css/jquery-ui/jquery.ui.all.css' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=The+Girl+Next+Door' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
 				
 		<!-- Scripts -->
 		<script type="text/javascript" src="js/curves.js"></script>
@@ -32,7 +33,6 @@
 		
 	</head>
 	<body>
-		
 		<!--FB Sharing-->
 		<div id="fb-root"></div>
 		<script>(function(d, s, id) {
@@ -53,7 +53,7 @@
 		</script>
 		
 		
-		<header>{ Beautiful Curves }</header>
+		<header><center>{ Beautiful Curves }</center></header>
 		<div id="info">
 			{ Info + Sharing }
 			<br><!-- whats wrong-->
@@ -76,11 +76,12 @@
 			
 		</div>
 		<div id="app">
-			<div id="colours"></div>
+			<div id="colours"><br /></div>
 			<canvas id="canvas">Sorry man, seems like your browser doesn't support awesomeness :()</canvas>
-			<div id="controls">
-				<div id="length"></div>
-				<div id="thickness"></div>
+				<div id="controls">
+		<div id='length'><br /></div>
+		<div id="thickness"><br /></div>
+
 			</div>
 		</div>
 	</body>
